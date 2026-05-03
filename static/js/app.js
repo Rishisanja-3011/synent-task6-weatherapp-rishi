@@ -159,6 +159,7 @@ function renderForecast(data) {
   const grid = document.getElementById('forecastGrid');
   grid.innerHTML = '';
 
+
   // OpenWeatherMap 5-day forecast returns 3h intervals → pick 1 per day (noon)
   const daily = {};
   data.list.forEach(item => {
